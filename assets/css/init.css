@@ -3,15 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
 
 :root{
-
   --Inter-font: "Inter", sans-serif;
   --Poppins-font: "Poppins", sans-serif;
   --Roboto-font: "Roboto", sans-serif;
   --Montserrat-font: "Montserrat", sans-serif;
   --Dosis-font: "Dosis", sans-serif;
+  --Caveat-font: "Caveat", "cursive";
   --Black: rgba(0, 0, 0, 1);
   --Grey: #6C6C6C;
   --White: #FFFFFF;
@@ -141,7 +142,7 @@ q{quotes:"\201C" "\201D" "\2018" "\2019";}
 
 
 .spanGredient span{background: var(--primary-gadient);-webkit-background-clip:text !important;-webkit-text-fill-color:transparent !important;background-clip:text !important;color:transparent;}
-.spanMark span{background-color: var(--primary-color);color: var(--White);padding: 0.01em 0.2em;border-radius: 8px;}
+.spanMark span{background-color: var(--primary-color);color: var(--White);padding: 0.01em 0.2em;padding-right: 0.4em;border-radius: 8px;font-family: var(--Caveat-font);}
 
 .tab-content{display:none;}
 .tab-content.active{display: flex;flex-flow: row wrap;}

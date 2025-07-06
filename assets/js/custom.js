@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+  $(function () {
+    $(".heart").on("click", function () {
+      $(this).toggleClass("is-active");
+    });
+  });
+
   $('.wishIcon').on('click', function () {
     $(this).toggleClass('active');
   });
@@ -28,6 +34,29 @@ $(document).ready(function () {
     autoplaySpeed: 4000,
     dots: false,
     infinite: true,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
   });
 
   // Sticky Header

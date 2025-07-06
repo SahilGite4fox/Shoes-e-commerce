@@ -8,6 +8,20 @@ nav > ul > li > a.active{font-weight: var(--fw-bold);}
 nav > ul{gap: 5em;}
 .headRgt{gap: 1.5em;}
 
+/* Hamberger Menu */
+/* Menu Icon */
+.menu-icon{cursor:pointer;display:inline-block;float:right;padding:28px 20px;position:relative;z-index: 99999;user-select:none;}
+.menu-icon .navicon{background:var(--primary-Txt-color);display:block;height:2px;width:18px;position:relative;transition:background .2s ease-out;}
+.menu-icon .navicon:before,.menu-icon .navicon:after{background:var(--primary-Txt-color);content:'';display:block;height:100%;position:absolute;transition:all .2s ease-out;width:100%;}
+.menu-icon .navicon:before{top:5px;}
+.menu-icon .navicon:after{top:-5px;}
+/* Menu Button */
+.menu-btn{display:none;}
+.menu-btn:checked ~ .menu-icon .navicon{background:transparent;}
+.menu-btn:checked ~ .menu-icon .navicon:before{transform:rotate(-45deg);}
+.menu-btn:checked ~ .menu-icon .navicon:after{transform:rotate(45deg);}
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after{top:0;}
+
 /* Slick Slider */
 .slick-dots li button{width: 10px;height: 10px;border: none;background: #d3d3d3;border-radius: 40px;}
 .slick-dots li.slick-active button{background: var(--primary-color);width: 25px;}
@@ -43,14 +57,14 @@ nav > ul{gap: 5em;}
 .newCollectionClockTitle{margin-bottom: 3em;}
 
 .hmCatagsSecTitle{margin-bottom: 3em;}
-.hmCatagsCards{overflow: hidden;}
+.hmCatagsCards{overflow: hidden;width: 33.3333%;}
 .hmCatagsCards > img{transition: all 0.3s;}
 .hmCatagsCards::before{content: "";position: absolute;bottom: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.8);opacity: 0;transition: all 0.3s;z-index: 2;}
 .hmCatagsCardsTxt{bottom: 0;left: 0;text-align: center;padding-inline: 0.5em;padding-bottom: 1em;transform: translateY(50%);opacity: 0;transition: all 0.3s;z-index: 3;}
 .hmCatagsCardsBtn a{font-size: calc(var(--smallest) + 2px);}
 .hmCatagsCardsBtn{margin-top: 0.5em;}
 .hmCatagsCardsTitle > *{font-size: calc(var(--body) + 2px);color: var(--White);text-transform: capitalize;font-family: var(--Roboto-font);}
-.hmCatagsCardsDesc{font-size: calc(var(--smallest) + 2px);font-family: var(--Inter-font);}
+.hmCatagsCardsDesc > *{font-size: calc(var(--smallest) + 2px);font-family: var(--Inter-font);}
 .hmCatagsCards:hover::before{opacity: 1;}
 .hmCatagsCards:hover > img{transform: scale(1.1);}
 .hmCatagsCards:hover .hmCatagsCardsTxt{opacity: 1;transform: none;}
@@ -73,14 +87,18 @@ nav > ul{gap: 5em;}
 .productCard:hover .cardCartBtn{bottom: 0;opacity: 1;}
 .productCards{gap: 1em;margin-top: 3em;row-gap: 3em;}
 .productCards.d-flex .productCard{width: calc(25% - 0.75em);}
-.wishIcon{width: 30px;height: 30px;top: 20px;right: 20px;background-image: url(../images/addWish.png);background-position: center;background-repeat: no-repeat;background-size: cover;transition: all 0.3s;cursor: pointer;}
-.wishIcon.active{width: 40px;height: 40px;background-image: url(../images/favWish.png);}
+.wishIcon{width: 10%;height: 10%;top: 8%;right: 8%;}
+.wishIcon.active{width: 10%;height: 10%;}
+.heart{width:100px;height:100px;background:url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;background-position:0 0;cursor:pointer;transition:background-position 1s steps(28);transition-duration:0s;&.is-active{transition-duration:1s;background-position:-2800px 0;}
+}
+.placement{top:50%;left:50%;transform:translate(-50%,-50%);}
+
 
 /* Product Slider */
 .hmProductSlider .productCard.slick-slide{margin-inline: 0.5em;}
 
 .brandNameImg{text-align:center;letter-spacing:-0.3333em;background:url(../images/pexels-pluyar-786003.jpg);background-position:center;background-size:cover;-webkit-text-fill-color:transparent;-webkit-background-clip:text;}
-.brandNameImg > *{font-size: 30vw;line-height: 1;}
+.brandNameImg > *{font-size: 40vw;line-height: 1;}
 
 
 
@@ -97,3 +115,9 @@ footer{background-color: var(--primary-color);border-top-left-radius: 70px;borde
 .footFrm input[type="email"]{outline: none;border: 1px solid var(--White);background-color: transparent;padding: 0.5em;font-family: var(--Poppins-font);font-size: var(--body);color: var(--White);}
 .footFrm input[type="email"]::placeholder{color: var(--White);font-size: calc(var(--body) - 3px);}
 .footFrm button{border: 1px solid var(--White);color:  var(--primary-color);font-size: calc(var(--body) - 2px);background-color: var(--White);padding: 0.3em 1em;height: 100%;}
+
+
+
+
+
+
