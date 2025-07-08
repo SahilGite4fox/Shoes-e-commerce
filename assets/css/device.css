@@ -61,6 +61,7 @@
     .flip-clock-wrapper ul li a div div.inn{font-size:10vw;}
     .flip-clock-wrapper ul{width:6vw;height:15vw;}
     .contactSecCont > *{padding:2em 1.5em;}
+    .ourTopCatagCard{max-width:calc(33.333% - 0.7999em);}
 
 
 }

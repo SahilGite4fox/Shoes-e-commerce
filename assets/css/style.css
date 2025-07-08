@@ -72,6 +72,13 @@ nav > ul{gap: 5em;}
 .hmCatagsCards:hover > img{transform: scale(1.1);}
 .hmCatagsCards:hover .hmCatagsCardsTxt{opacity: 1;transform: none;}
 
+.ourTopCatagCards{gap: 1em;margin-top: 2.5em;}
+.ourTopCatagCard{max-width: calc(20% - 0.7999em);border: 1px solid rgba(0, 0, 0, 0.086);border-radius: 10px;overflow: hidden;align-content: center;transition: all 0.3s;}
+.ourTopCatagCard > a{padding: 1em;float: left;}
+.ourTopCatagCard > a img{transition: all 0.3s;}
+.ourTopCatagCards .ourTopCatagCard:hover{border-color: var(--secondary-color);}
+.ourTopCatagCards .ourTopCatagCard:hover img{transform: scale(0.9);}
+
 .newArriveSecTitle{margin-bottom: 1.5em;}
 .newArriveSecDesc > p{max-width: 900px;margin: auto;}
 

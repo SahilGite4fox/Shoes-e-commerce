@@ -127,7 +127,7 @@ q{quotes:"\201C" "\201D" "\2018" "\2019";}
 
 .comm_Banner_title > *{font-size: var(--banner-title);font-family: var(--Montserrat-font);font-weight: var(--fw-extra-bold);color: var(--primary-Txt-color);text-transform: capitalize;line-height: 1.1;}
 .comm_Banner_title.white > *{color: var(--White);}
-.comm_Title > *{font-size:var(--main-title);font-weight:var(--fw-bold);font-family:var(--Montserrat-font);color:var(--primary-Txt-color);line-height: 1.2;}
+.comm_Title > *{font-size:var(--main-title);font-weight:var(--fw-bold);font-family:var(--Montserrat-font);color:var(--primary-Txt-color);line-height: 1.2;text-transform: uppercase;}
 .sub_title{font-size:var(--sub-title);text-transform:uppercase;font-weight:var(--fw-medium);font-family:var(--primary-font);line-height:97%; letter-spacing: 8px;}
 .sub_heading{font-size:var(--sub-txt);font-family:var(--Roboto-font);font-weight:var(--fw-medium);color:var(--secondary-Txt-color);}
 .sub_heading-thin{font-size:var(--sub-txt);font-family:var(--Roboto-font);line-height:1.24;color:var(--secondary-Txt-color);}
