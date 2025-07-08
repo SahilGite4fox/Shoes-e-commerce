@@ -34,7 +34,10 @@ nav > ul{gap: 5em;}
 .hmProductSlider button.slick-prev{left: calc(var(--slickBtnWid) / -2);}
 .hmProductSlider button.slick-next{right: calc(var(--slickBtnWid) / -2);}
 
-.hmBannerContent{max-width: 45%;}
+.hmBannerContTitle > h2{font-family: var(--Dosis-font);font-size: 10vw;}
+.hmBannerContTitle > h2:not(.absolute){color: var(--White);}
+.comm_Banner_title > *.absolute{top: 50%;left: 50%;transform: translate(-50%, -50%);color:transparent;-webkit-text-stroke:1px var(--White);width: 100%;}
+.hmBannerContTitle > img.absolute{top: 50%;left: 50%;transform: translate(-50%, -50%);max-width: 75%;}
 .hmBannerSlider > img{min-height:100dvh;left:0;top:0;aspect-ratio:2.2 / 1;object-fit:cover;}
 .hmBannerSlider{display:flex;align-items:center;min-height:100dvh;}
 .hmBannerContDesc{font-size: var(--body-sub);color: var(--primary-Txt-color);margin-top: 1em;}
@@ -121,3 +124,8 @@ footer{background-color: var(--primary-color);border-top-left-radius: 70px;borde
 
 
 
+.hollowTitle > *{color:transparent;-webkit-text-stroke:1px var(--primary-color);}
+.imageWithTitle h2{font-size: 10vw;line-height: 1;}
+.hollowTitle,.solidTitle{left: 50%;top: 50%;transform: translate(-50%, -50%);}
+.mainImg{max-width: 45vw;margin: auto;position: relative;}
+.imageWithTitle{min-height: 100vh;}

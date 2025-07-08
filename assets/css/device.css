@@ -36,7 +36,6 @@
 
 }
 @media only screen and (max-width: 768px){
-    .hmBannerContent{max-width:90%;}
     .hmAboutContTxt,.hmAboutContImg{max-width:100%;}
     .hmAboutSec{padding-top: var(--secGap);padding-bottom: calc(var(--secGap) * 3.5);}
     .hmAboutContImg > img.relative{transform: none;}
@@ -45,7 +44,8 @@
     .hmAboutContImg{margin-top: var(--secGap);}
     .hmAboutSec2 .hmAboutCont{flex-direction: column-reverse;gap: 2em;}
     .hmAboutContImg2,.hmAboutSec2 .hmAboutContTxt{max-width: 100%;}
-
+    .hmBannerContTitle > h2{font-size: 14vw;}
+    .hmBannerContTitle > img.absolute{max-width: 100%;}
 
 }
 @media only screen and (max-width: 620px){
