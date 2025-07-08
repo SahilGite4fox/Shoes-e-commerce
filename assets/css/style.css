@@ -120,8 +120,27 @@ footer{background-color: var(--primary-color);border-top-left-radius: 70px;borde
 .footFrm button{border: 1px solid var(--White);color:  var(--primary-color);font-size: calc(var(--body) - 2px);background-color: var(--White);padding: 0.3em 1em;height: 100%;}
 
 
-
-
+/* Contact Page */
+.contactUsSec{margin-top: calc(var(--secGap) / 2);}
+.contactSecCont{border-radius:10px;box-shadow:0px 10px 20px rgba(0,0,0,0.08);background:rgba(244,231,231,0.4);overflow:hidden;}
+.contactContSec{background-color:var(--White);}
+.contactSecCont > *{width:50%;padding:2.125em 3.4375em;}
+.contactContFrmTitle > *{font-size:calc(var(--sub-title) - 10px);}
+.contactContFrmDesc > *{font-size:var(--body);color:#4D5461;}
+.contactContFrmSec .contactContFrmTitle{margin-bottom:0.5em;}
+.contactContFrm{margin-top:1.25em;}
+.contactContFrm ul.d-flex{gap:1.25em;}
+.contactContFrm ul.d-flex li.col-50{width:calc(50% - 0.63em);}
+.contactContFrmFields{position:relative;}
+.contactContFrmFields input,.contactContFrmFields textarea,.contactContFrmFields select{font-size:calc(var(--body-sub) - 3px);color:var(--Black);background:rgba(255,255,255,0.6);border-radius:10px;padding:1.4285em;outline:none;border:1px solid #D6D6D6;width:100%;resize:none;font-family:var(--Satoshi-font);}
+.contactContFrmFields select{background-image:url(../images/selectArr.png);background-repeat:no-repeat;background-position:right 20px center;background-size:12px;padding-right:2.6em;-moz-appearance:none;-webkit-appearance:none;}
+.contactContInfo > ul{margin-top:2.125em;}
+.contactContInfo > ul > li{margin-bottom:1.5em;}
+.contactInfo{gap:1em;padding:0.5em 1em;border:1px solid #D6D6D6;border-radius:10px;}
+.contactInfoIcon{max-width:30px;}
+.contactInfoTxt p,.contactInfoTxt a{font-size:calc(var(--body) - 1px);color:var(--Black);font-weight:var(--fw-regular);}
+.contactInfoTxt p > span{font-weight:var(--fw-bold);display:block;}
+.contactLocation iframe{width:100%;border-radius:10px;aspect-ratio:2.58 / 1;height:auto;}
 
 
 .hollowTitle > *{color:transparent;-webkit-text-stroke:1px var(--primary-color);}
